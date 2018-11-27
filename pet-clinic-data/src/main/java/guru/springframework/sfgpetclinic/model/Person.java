@@ -15,14 +15,14 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class Person extends BaseEntity {
 
-    public Person(Long id, String firsName, String lastName) {
+    public Person(Long id, String firstName, String lastName) {
         super(id);
-        this.firsName = firsName;
+        this.firstName = firstName;
         this.lastName = lastName;
     }
 
     @Column(name = "first_name")
-    private String firsName;
+    private String firstName;
     @Column(name = "last_name")
     private String lastName;
 
